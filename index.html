@@ -12,19 +12,22 @@
             <img src="img\header-logo.jpg" alt="Логотип строй магазина «Техномарт»">
           </a>
           <div class="search">
-            <span>Поиск:</span>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+            </form>
           </div>
           <a class="bookmarks" href="#bookmarks">Закладки: 0</a>
           <a class="basket" href="#basket">Корзина: 0</a>
-          <a class="checkout" href="#checkout">Оформить заказ</a>
+          <a class="checkout checkout-open" href="#checkout">Оформить заказ</a>
         </div>
         <section class="user-navigation">
           <h1><em>Интернет-магазин строительных материалов и инструментов для ремонта</em></h1>
           <div class="phone-number">
-            <span>+7 (812) 555-05-55</span>
+            <img src="img\icon-phone.svg">
+            <span class="tel">+7 (812) 555-05-55</span>
           </div>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <ul class="login-form">
+          <ul class="login-form" aria-label="Ссылки для входа и регистрации">
             <li><a class="login" href="#login">Войти</a></li>
             <li><a class="registration" href="#registration">Регистрация</a></li>
           </ul>
@@ -45,28 +48,30 @@
       <article class="drills-and-perforators">
         <img src="img\slider1.jpg">
         <img src="img\slider2.jpg">
+        <button type="button" class="article-button article-button-next visually-hidden" aria-label="Следующий слайд"></button>
+        <button type="button" class="article-button article-button-back visually-hidden" aria-label="Предыдущий слайд"></button>
       </article>
       <section class="categories">
         <h1 class="visually-hidden">Категории товаров</h1>
         <div class="materials new-category">
           <h2>Материалы</h2>
-          <a class="link-to-materials" href="materials.html">На любой вкус</a>
+          <a class="link-to-materials" href="materials.html" aria-label="Ссылка на материалы">На любой вкус</a>
         </div>
         <div class="instruments">
           <h2>Инструмент</h2>
-          <a class="link-to-instruments" href="instruments.html">На все случаи</a>
+          <a class="link-to-instruments" href="instruments.html" aria-label="Ссылка на инструменты">На все случаи</a>
         </div>
         <div class="equipment">
           <h2>Техника</h2>
-          <a class="link-to-equipment" href="equipment.html">Для стройки</a>
+          <a class="link-to-equipment" href="equipment.html" aria-label="Ссылка на оборудование">Для стройки</a>
         </div>
         <div class="discounts">
           <h2>Скидки 50%</h2>
-          <a class="link-to-discounts" href="discounts.html">На 350 товаров</a>
+          <a class="link-to-discounts" href="discounts.html" aria-label="Ссылка на технику">На 350 товаров</a>
         </div>
         <div class="delivery">
           <h2>Доставка</h2>
-          <a class="link-to-delivery" href="delivery.html">Бесплатно</a>
+          <a class="link-to-delivery" href="delivery.html" aria-label="Ссылка для доставки">Бесплатно</a>
         </div>
       </section>
 
@@ -178,8 +183,8 @@
         </p>
         <ul class="service-list">
           <li>
+            <button type="button" class="service-button button-for-delivery">Доставка</button>
             <h3>Доставка</h3>
-            <!--Не понимаю как разметить <br>-->
             <img src="img\car.png" alt="delivery">
             <p>Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!
@@ -188,6 +193,7 @@
             </p>
           </li>
           <li>
+            <button type="button" class="service-button button-for-warranty">Гарантия</button>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгаранием,
@@ -197,12 +203,13 @@
             </p>
           </li>
           <li>
+            <button type="button" class="service-button button-for-credit">Кредит</button>
             <h3>Кредит</h3>
             <img src="img\dollar.png" alt="credit">
             <p>Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a class="credit-application" href="credit.html">Отправить заявку<a>
+            <a class="credit-application" href="credit.html" aria-label="Заявка на кредит">Отправить заявку<a>
           </li>
         </ul>
       </section>
@@ -277,6 +284,32 @@
         </section>
       </div>
     </footer>
-    <!--Тут булет попап с полями и кнопкой(раздел контакты)-->
+    <!--Первый popup-->
+    <div class="product-added">
+      <img src="img\icon-mark.svg">
+      <p>Товар добавлен в корзину!</p>
+      <a class="checkout checkout-inside" href="#checkout">Оформить заказ</a>
+      <a class="continue-shopping" href="index.html">Продолжить покупки</a>
+    </div>
+    <div>
+    <!--Второй popup, с картой-->
+    </div>
+    <!--Третий popup-->
+    <div class="contact-us">
+      <form class="opening-window-form" method="post" action="https://echo.htmlacademy.ru">
+        <label for="name-field">Ваше имя:</label>
+        <input class="input-field" type="text" name="Имя клиента" id="name-field" placeholder="Представьтесь, пожалуйста">
+        <br>
+        <label for="email-field">Ваш e-mail:</label>
+        <input class="input-field" type="email" name="email" id="email-field" placeholder="Для отправки ответа" aria-label="Введите ваш e-mail">
+        <br>
+        <label for="about-you-field">Текст письма:</label>
+        <!--Почему placeholder не работает?-->
+        <textarea name="about-you" id="about-you-field" rows="10" cols="30" placeholder="В свободной форме" aria-label="Задайте интересующий вас вопрос">
+        </textarea>
+        <br>
+        <button class="submit contact-us-submit" name="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
