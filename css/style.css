@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-header-logo:active {
+  background-color: #ba2732;
+}
+
+.order-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.checkout-open {
+  background-color: #63a63e;
+}
+
+.order-navigation a,
+.site-navigation a {
+  color: #ffffff;
+}
+
+.login-form,
+.site-navigation,
+.footer-navigation-list-1,
+.footer-navigation-list-2,
+.social-networks-list {
+  list-style: none;
+}
+
+
+.entry-field:hover,
+.bookmarks:hover,
+.empty-basket:hover {
+  background-color: #212a3a;
+}
+
+.checkout-open:hover {
+  background-color: #5fbb2d;
+}
+
+.bookmarks:active,
+.empty-basket:active {
+  opacity: 0.6;
+  background-color: #161d29;
+}
+
+.checkout-open:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+
+.entry-field:focus {
+  background-color: #ffffff;
+  color: #262626;
+}
+
+.user-navigation {
+  background-color: #f3f7f9;
+}
+
+.index-page-title {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone-number .tel {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
+
+
+.login-form a {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+.login-form a:hover {
+  color: #ee3643;
+}
+
+.login-form a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  background-color: #32425c;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  opacity: 0.5
+}
+
+.contacts-caption,
+.about-us-caption {
+  font-size: 30px;
+  font-weight: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-us p,
+.contacts p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.transport-companies li {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+
+}
+
+.more-info-about-us,
+.opening-window-button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.more-info-about-us:hover,
+.opening-window-button:hover {
+  background-color: #ca2c37;
+}
+
+.more-info-about-us:active,
+.opening-window-button:active {
+  background-color: #ba2732;
+}
+
+.main-footer .footer-top {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.footer-navigation-list-1 a {
+  color: #f1f5f7;
+}
+
+.footer-navigation-list-2 a {
+  color: #ffd180;
+}
+
+.footer-navigation-list-1 a:hover,
+.footer-navigation-list-2 a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-list-1 a:active,
+.footer-navigation-list-2 a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.main-footer .footer-bottom {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.social-networks-list a {
+  background-color: #212a3a;
+  color: #ffffff;
+}
+
+.social-networks-list a:hover,
+.social-networks-list a:active {
+  background-color: #ee3643
+}
+
+.feedback a,
+.developer a {
+  color: #ffd180;
+}
+
+.feedback a:hover,
+.developer a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.developer a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
