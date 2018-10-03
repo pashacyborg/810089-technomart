@@ -31,6 +31,9 @@ a {
   background-color: #293449;
 }
 
+
+
+
 .full-basket {
   background-color: #ee3643;
 }
@@ -52,6 +55,7 @@ a {
 .site-navigation a {
   color: #ffffff;
 }
+
 
 .login-form,
 .site-navigation,
@@ -405,34 +409,81 @@ a {
 
 html,
 body {
-  min-width: 1200px;
+  min-width: 940px;
   min-height: 3151px;
 }
 
 .main-header {
-  min-height: 320px;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  min-height: 320px;
   margin-bottom: 59px;
   background-color: #f3f7f9;
 }
 
+
+.container:not(.order-navigation-wrapper) {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+.order-navigation-wrapper {
+  width: 100%;
+  min-height: 42px;
+  background-color: #293449;
+}
 .main-navigation {
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
   min-width: 940px;
   min-height: 260px;
-  outline: dotted black;
 }
 
 .order-navigation {
   display: flex;
+  justify-content: space-between;
+  width: 940px;
+  min-height: 42px;
+}
+
+.user-navigation {
+  display: flex;
+  flex-direction: column;
+  min-height: 158px;
+  width: 940px;
   margin: 0;
   padding: 0;
-  min-height: 42px;
+}
+
+.index-page-title {
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.phone-number {
+  justify-content: center;
+  align-self: center;
+}
+
+.header-contacts {
+  justify-content: center;
+  align-self: center;
+}
+
+.login-form {
+  justify-content: center;
+  align-self: flex-end;
 }
 
 .site-navigation {
   display: flex;
+  justify-content: space-around;
+  width: 940px;
   margin: 0;
   padding: 0;
   min-height: 60px;

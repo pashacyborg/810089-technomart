@@ -10,46 +10,50 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="order-navigation">
-          <a class="main-header-logo">
-            <img src="img/header-logo.jpg" alt="Логотип строй магазина «Техномарт»">
-          </a>
-          <div class="search">
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input class="entry-field" type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
-            </form>
+        <div class="container">
+          <div class="order-navigation-wrapper">
+          <div class="order-navigation">
+            <a class="main-header-logo">
+              <img src="img/header-logo.jpg" alt="Логотип строй магазина «Техномарт»">
+            </a>
+            <div class="search">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <input class="entry-field" type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+              </form>
+            </div>
+            <a class="bookmarks" href="#bookmarks">Закладки: 0</a>
+            <a class="basket empty-basket" href="#basket">Корзина: 0</a>
+            <a class="checkout-open" href="#checkout">Оформить заказ</a>
           </div>
-          <a class="bookmarks" href="#bookmarks">Закладки: 0</a>
-          <a class="basket empty-basket" href="#basket">Корзина: 0</a>
-          <a class="checkout-open" href="#checkout">Оформить заказ</a>
-        </div>
-        <section class="user-navigation">
-          <h1 class="index-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-          <div class="phone-number">
-            <img src="img/icon-phone.svg" alt="Картинка телефона">
-            <span class="tel">+7 (812) 555-05-55</span>
           </div>
-          <p class="header-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <ul class="login-form" aria-label="Ссылки для входа и регистрации">
-            <li><a class="login" href="#login">Войти</a></li>
-            <li><a class="registration" href="#registration">Регистрация</a></li>
+          <section class="user-navigation">
+            <h1 class="index-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <div class="phone-number">
+              <img src="img/icon-phone.svg" alt="Картинка телефона">
+              <span class="tel">+7 (812) 555-05-55</span>
+            </div>
+            <p class="header-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+            <ul class="login-form" aria-label="Ссылки для входа и регистрации">
+              <li><a class="login" href="#login">Войти</a></li>
+              <li><a class="registration" href="#registration">Регистрация</a></li>
+            </ul>
+          </section>
+          <ul class="site-navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
-        </section>
-        <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        </div>
       </nav>
     </header>
 
-    <main class="index-container">
+    <main class="main-content-index container">
       <article class="drills-and-perforators">
         <h2 class="visually-hidden">Дрели и перфораторы</h2>
         <img src="img/slider1.jpg" alt="Фото с перфоратором">
@@ -243,7 +247,7 @@
       </article>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-top">
         <section class="info">
           <h2 class="visually-hidden">Основная информация о нас</h2>
