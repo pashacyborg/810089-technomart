@@ -407,6 +407,9 @@ a {
 
 /*-----Сеточные стили-----*/
 
+html { box-sizing: border-box; }
+, ::before, *::after { box-sizing: inherit; }
+
 html,
 body {
   min-width: 940px;
@@ -476,15 +479,56 @@ body {
 }
 
 .login-form {
+  display: flex;
   justify-content: center;
   align-self: flex-end;
 }
 
 .site-navigation {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-around;
   width: 940px;
   margin: 0;
   padding: 0;
   min-height: 60px;
+}
+
+
+.grouper {
+  display: flex;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+.footer-top-wrapper {
+  width: 100%;
+  min-height: 193px;
+}
+
+.footer-bottom-wrapper {
+    width: 100%;
+    min-height: 107px;
+}
+
+.container .info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  order: 1;
+}
+
+.container .footer-navigation {
+  display: flex;
+  order: 2;
 }
